@@ -1,0 +1,116 @@
+%-------------------------------------------------------------------------------
+% This file contains the title, author and abstract.
+% It also contains all relevant document numbers used by the different cover pages.
+%-------------------------------------------------------------------------------
+
+% Title
+\AtlasTitle{AtlasTitle: Bare bones ATLAS document}
+
+% Draft version:
+% Should be 1.0 for the first circulation, and 2.0 for the second circulation.
+% If given, adds draft version on front page, a 'DRAFT' box on top of every other page, 
+% and line numbers.
+% Comment or remove in the final version.
+\AtlasVersion{0.1}
+
+% Abstract - % directly after { is important for correct indentation
+\AtlasAbstract{%
+  This is a bare bones ATLAS document. Put the abstract for the document here.
+}
+
+% Author - this does not work with revtex (add it after \begin{document})
+% This has to be commented out for TDR etc.
+% For PUB notes, add package authblk and use \thanks if an ACE/STA should be added.
+% See Section 4.2 of ATLAS LaTeX guide and latex/atlascontribute.sty for more details.
+% \author{The ATLAS Collaboration}
+
+% ATLAS reference code, to help ATLAS members to locate the paper
+\AtlasRefCode{GROUP-2024-XX}
+
+% CERN preprint number
+% \PreprintIdNumber{CERN-EP-2024-XX}
+
+% ATLAS date - arXiv submission; usually filled in by the Physics Office
+% \AtlasDate{\today}
+
+% ATLAS heading - heading at top of title page. Set for TDR etc.
+% \AtlasHeading{ATLAS ABC TDR}
+
+% Keywords - some journals want keywords on the title page.
+% You have to pass the option keywords=true to atlasdoc for this to be effective.
+% \AtlasKeywords{keywords}
+
+% Copyright - use if something other than the default copyright is required.
+% You have to pass the option copyright=true to atlasdoc for this to be effective.
+% \AtlasCopyright{\the\year \ CERN for the benefit of the ATLAS Collaboration.\newline
+%   Reproduction of this article or parts of it is allowed as specified in the CC-BY-4.0 license.}
+
+% arXiv identifier
+% \arXivId{21XX.YYYY}
+
+% HepData record
+% \HepDataRecord{ZZZZZZZZ}
+
+% Submission journal and final reference
+% \AtlasJournal{Phys.\ Lett.\ B.}
+% \AtlasJournalRef{\PLB 789 (2023) 123}
+% \AtlasDOI{}
+
+% Some papers/public notes have a special author list.
+% If a special author list should be indicated via a link use the following code:
+% Include the two lines below if you do not use atlasstyle:
+% \usepackage[marginal,hang]{footmisc}
+% \setlength{\footnotemargin}{0.5em}
+% Use the following lines in all cases:
+% \usepackage{authblk}
+% \author{The ATLAS Collaboration%
+% \thanks{The full author list can be found at:\newline
+%   \url{https://atlas.web.cern.ch/Atlas/PUBNOTES/ATL-PHYS-PUB-2024-XXX/authorlist.pdf}}
+% }
+% You may need the following lines if the affiliation number does not appear as a superscript
+% when you are using authblk.
+% \makeatletter
+% \renewcommand\AB@authnote[1]{{\normalfont\textsuperscript{#1}}}
+% \renewcommand\AB@affilnote[1]{{\normalfont\textsuperscript{#1}}}
+% \makeatother
+
+%-------------------------------------------------------------------------------
+% The following information is needed for the cover page. The commands are defined
+% if you use the coverpage option in atlasdoc or use the atlascover package.
+% They are also defined if you include the atlasmetadefs package.
+%-------------------------------------------------------------------------------
+
+% List of supporting notes  (leave as null \AtlasCoverSupportingNote{} if you want to skip this option)
+% \AtlasCoverSupportingNote{Short title note 1}{https://cds.cern.ch/record/XXXXXXX}
+% \AtlasCoverSupportingNote{Short title note 2}{https://cds.cern.ch/record/YYYYYYY}
+%
+% OR (the 2nd option is deprecated, especially for CONF and PUB notes)
+%
+% Supporting material TWiki page  (leave as null \AtlasCoverTwikiURL{} if you want to skip this option)
+% \AtlasCoverTwikiURL{https://twiki.cern.ch/twiki/bin/view/Atlas/WebHome}
+
+% Comment deadline
+% \AtlasCoverCommentsDeadline{DD Month 2024}
+
+% Analysis team members - contact editors should no longer be specified
+% as there is a generic email list name for the editors
+% \AtlasCoverAnalysisTeam{Peter Analyser, Susan Editor1, Jenny Editor2, Alphonse Physicien}
+
+% Editorial Board Members - indicate the Chair by a (chair) after his/her name
+% Give either all members at once (then they appear on one line), or separately
+% \AtlasCoverEdBoardMember{EdBoard~Chair~(chair), EB~Member~1, EB~Member~2, EB~Member~3}
+% \AtlasCoverEdBoardMember{EdBoard~Chair~(chair)}
+% \AtlasCoverEdBoardMember{EB~Member~1}
+% \AtlasCoverEdBoardMember{EB~Member~2}
+% \AtlasCoverEdBoardMember{EB~Member~3}
+
+% A PUB note has readers and not an EdBoard -- give their names here (one line or several entries)
+% \AtlasCoverReaderMember{Reader~1, Reader~2}
+% \AtlasCoverReaderMember{Reader~1}
+% \AtlasCoverReaderMember{Reader~2}
+
+% Analysis team egroup
+% \AtlasCoverEgroupAnalysisTeam{atlas-GROUP-2024-XX-analysis-team@cern.ch}
+
+% EdBoard and conveners egroup
+% \AtlasCoverEgroupEdBoard{atlas-GROUP-2024-XX-edboard-conveners@cern.ch}

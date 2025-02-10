@@ -1,0 +1,57 @@
+%!TEX root = ../thesis.tex
+
+\chapter{Introduction}
+
+The field of particle physics is a vibrant and rapidly evolving discipline that seeks to 
+uncover the fundamental constituents of matter and the forces that govern their interactions. 
+At the heart of this endeavor lies the Standard Model (SM) of particle physics, a robust 
+theoretical framework that has successfully explained a wide array of experimental results. 
+The SM encompasses the electromagnetic, weak, and strong forces, which are mediated by gauge 
+bosons, and the Higgs mechanism, which imparts mass to these particles. However, despite 
+its successes, the SM is known to be incomplete, prompting the exploration of extensions 
+that can address its limitations.
+
+The Standard Model provides a comprehensive description of the elementary particles and 
+their interactions. It classifies all known fundamental particles into two groups: 
+fermions, which make up matter, and bosons, which mediate the forces between fermions. 
+The fermions include quarks and leptons, while the bosons include the photon, W and Z bosons, 
+and gluons. The Higgs boson, discovered in 2012 at the Large Hadron Collider (LHC), 
+is a pivotal component of the SM, responsible for giving mass to the other fundamental particles 
+through the Higgs mechanism.
+
+Symmetry principles, particularly gauge invariance, underpin the SM. These principles dictate 
+the interactions between particles, leading to the formulation of electroweak theory 
+for electromagnetic interactions and weak interactions, quantum chromodynamics (QCD) for strong interactions.
+Both of these theories has been rigorously tested
+and confirmed through numerous experiments.
+
+Despite its successes, the SM does not include gravity, which is described by General Relativity 
+in the classical regime. The quest for a quantum theory of gravity, which would unify all fundamental 
+forces, remains one of the most significant challenges in theoretical physics. Various approaches, 
+such as string theory and loop quantum gravity, aim to address this gap, but a complete and 
+experimentally verified theory is yet to be established. Additionally, the SM does not account 
+for dark matter and dark energy, which constitute approximately 95\%
+of the universe's energy density. The existence of these components is inferred from astrophysical 
+observations, such as the rotation curves of galaxies and the accelerated expansion of the universe. 
+Extensions to the SM, including supersymmetry and theories involving extra dimensions, have been proposed 
+to incorporate these phenomena, but experimental confirmation is still pending.
+
+This thesis is dedicated to exploring the intricacies of the Standard Model and its potential gravitational extensions, as will be introduced in Chapter~2.
+In the latter part of Chapter~2, the modeling of the proton-proton collisions at the Large Hadron Collider (LHC) will be discussed.
+Chapter~3 will introduce the ATLAS detector, a sophisticated instrument designed to measure the 
+properties of particles produced in high-energy collisions. The thesis will provide a comprehensive 
+overview of the ATLAS detector's components, including the inner detector, calorimeters, muon 
+spectrometer, and the trigger and data acquisition system. The chapter will also discuss the
+reconstruction of particles within the ATLAS detector. 
+In Chapter~4, special attention will be given to the reconstruction and identification of tau leptons, which 
+play a crucial role in various searches for new physics. Innovative methods for tau lepton reconstruction, 
+including machine learning techniques such as Recurrent Neural Networks (RNNs), will be discussed. 
+The thesis will also present the development and performance evaluation of muon and electron removal 
+methods in boosted $\tlth$ lepton-pair reconstruction in Chapter~5 and Chapter~6
+respectively, along with benchmarks using $\Zttlephad$ events.
+To put these new developments to test, in Chapter~7, the thesis will explore searches for heavy resonant particles. In particular, a hypothetical graviton, 
+in channels involving tau leptons and b-jets. These searches are motivated by theories that extend the SM and aim to provide insights into the nature of gravity.
+Finally, Chapter~8 will summarise the thesis's key findings and discuss their implications for the field of particle physics.
+This thesis aims to contribute to the ongoing efforts to understand the fundamental 
+structure of the universe by leveraging the capabilities of the ATLAS experiment and exploring 
+both established and novel aspects of particle physics.

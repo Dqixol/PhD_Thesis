@@ -1,0 +1,60 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is '.aux/thesis.blg'
+[41] biber:340> INFO - === Thu Jan 23, 2025, 11:46:25
+[50] Biber.pm:420> INFO - Reading '.aux/thesis.bcf'
+[141] Biber.pm:994> INFO - Found 190 citekeys in bib section 0
+[150] Biber.pm:4463> INFO - Processing section 0
+[157] Biber.pm:4654> INFO - Looking for bibtex file '../atlaslatex/bib/ATLAS.bib' for section 0
+[198] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1118] bibtex.pm:1519> INFO - Found BibTeX data source '../atlaslatex/bib/ATLAS.bib'
+[1277] Biber.pm:4654> INFO - Looking for bibtex file '../atlaslatex/bib/CMS.bib' for section 0
+[1317] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2229] bibtex.pm:1519> INFO - Found BibTeX data source '../atlaslatex/bib/CMS.bib'
+[2343] Biber.pm:4654> INFO - Looking for bibtex file '../atlaslatex/bib/ConfNotes.bib' for section 0
+[2373] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2824] bibtex.pm:1519> INFO - Found BibTeX data source '../atlaslatex/bib/ConfNotes.bib'
+[2874] Biber.pm:4654> INFO - Looking for bibtex file '../atlaslatex/bib/PubNotes.bib' for section 0
+[2883] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3025] bibtex.pm:1519> INFO - Found BibTeX data source '../atlaslatex/bib/PubNotes.bib'
+[3060] Biber.pm:4654> INFO - Looking for bibtex file '../atlaslatex/bib/ATLAS-useful.bib' for section 0
+[3065] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3179] bibtex.pm:1519> INFO - Found BibTeX data source '../atlaslatex/bib/ATLAS-useful.bib'
+[3347] Biber.pm:4654> INFO - Looking for bibtex file 'thesis-bib.bib' for section 0
+[3348] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3353] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis-bib.bib'
+[3364] Biber.pm:4654> INFO - Looking for bibtex file '1_MainChapters/Chap1_Intro/intro.bib' for section 0
+[3364] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3367] bibtex.pm:1519> INFO - Found BibTeX data source '1_MainChapters/Chap1_Intro/intro.bib'
+[3376] Biber.pm:4654> INFO - Looking for bibtex file '1_MainChapters/Chap2_Theory/theory.bib' for section 0
+[3377] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3388] bibtex.pm:1519> INFO - Found BibTeX data source '1_MainChapters/Chap2_Theory/theory.bib'
+[3419] Biber.pm:4654> INFO - Looking for bibtex file '1_MainChapters/Chap3_ATLAS/atlas-chap.bib' for section 0
+[3420] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3433] bibtex.pm:1519> INFO - Found BibTeX data source '1_MainChapters/Chap3_ATLAS/atlas-chap.bib'
+[3510] Biber.pm:4654> INFO - Looking for bibtex file '1_MainChapters/Chap4_TauRec/tau.bib' for section 0
+[3511] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3513] bibtex.pm:1519> INFO - Found BibTeX data source '1_MainChapters/Chap4_TauRec/tau.bib'
+[3646] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3646] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3646] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[3646] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
+[3706] bbl.pm:676> INFO - Writing '.aux/thesis.bbl' with encoding 'UTF-8'
+[3754] bbl.pm:779> INFO - Output to .aux/thesis.bbl
+[3754] Biber.pm:131> WARN - Duplicate entry key: 'pyhf_joss' in file 'thesis-bib.bib', skipping ...
+[3754] Biber.pm:131> WARN - legacy month field 'Mar' in entry 'RevModPhys.71.S96' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - Duplicate entry key: 'RevModPhys.71.S96' in file '1_MainChapters/Chap2_Theory/theory.bib', skipping ...
+[3754] Biber.pm:131> WARN - Duplicate entry key: 'ParticleDataGroup:2022pth' in file '1_MainChapters/Chap2_Theory/theory.bib', skipping ...
+[3754] Biber.pm:131> WARN - legacy month field 'Aug' in entry 'PhysRev.127.965' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - legacy month field 'Feb' in entry 'PhysRev.105.1413' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/g8/w_9jj6_j7gd88bwjbwgh0k500000gn/T/biber_tmp_ebFZ/39445aeecdc2a80748d9ae7244cd2c08_1227.utf8, line 155, warning: 18 characters of junk seen at toplevel
+[3754] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/g8/w_9jj6_j7gd88bwjbwgh0k500000gn/T/biber_tmp_ebFZ/39445aeecdc2a80748d9ae7244cd2c08_1227.utf8, line 171, warning: 15 characters of junk seen at toplevel
+[3754] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/g8/w_9jj6_j7gd88bwjbwgh0k500000gn/T/biber_tmp_ebFZ/39445aeecdc2a80748d9ae7244cd2c08_1227.utf8, line 186, warning: 16 characters of junk seen at toplevel
+[3754] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/g8/w_9jj6_j7gd88bwjbwgh0k500000gn/T/biber_tmp_ebFZ/39445aeecdc2a80748d9ae7244cd2c08_1227.utf8, line 202, warning: 17 characters of junk seen at toplevel
+[3754] Biber.pm:131> WARN - Duplicate entry key: 'ParticleDataGroup:2022pth' in file '1_MainChapters/Chap3_ATLAS/atlas-chap.bib', skipping ...
+[3754] Biber.pm:131> WARN - legacy month field 'Feb' in entry 'ADAMS1960' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - legacy month field 'aug' in entry 'totem_2008' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - legacy month field 'may' in entry 'Arduini_2024' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - legacy month field 'Apr' in entry 'Benedikt2020' is not an integer - this will probably not sort properly.
+[3754] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/g8/w_9jj6_j7gd88bwjbwgh0k500000gn/T/biber_tmp_ebFZ/382225f01e29e65fd9e8c1a201d3f012_1227.utf8, line 233, warning: 3 characters of junk seen at toplevel
+[3754] Biber.pm:131> WARN - Duplicate entry key: 'chollet2015keras' in file '1_MainChapters/Chap4_TauRec/tau.bib', skipping ...
+[3754] Biber.pm:133> INFO - WARNINGS: 17

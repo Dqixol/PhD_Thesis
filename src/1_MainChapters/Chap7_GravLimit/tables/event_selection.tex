@@ -1,0 +1,53 @@
+\begin{table}[htbp]
+    \caption{Summary of signal region event-selection criteria. SR events pass at least one trigger listed below. 
+    A control region is defined in which events fail any one or more of the cuts marked with \textbf{*}, while passing every other selection.
+    For better CR statistics, the lower bound of $\mttcol$ and $\mbb$ is relaxed to 60 GeV for CR.
+    ``fatjet'' refers to the large-radius jet clustered with the anti-$k_t$ algorithm with $R=1.0$.
+    }
+    \label{tab:evt_sel}
+    \centering
+    % \scriptsize
+    \begin{tabular}{lr}
+    \toprule
+    Object & \begin{tabular}{rr} Selection & \end{tabular} \\
+    \midrule
+    Triggers                & \begin{tabular}{rr} 
+                                lowest un-prescaled single muon triggers &  \\ 
+                                lowest un-prescaled $\met$ triggers &  \\
+                            \end{tabular} \\
+    \midrule
+    $\tauhadmurm$           & \begin{tabular}{rr} 
+                                $0 < |\eta| < 1.37$ or $1.52 < |\eta| < 2.5$ &  \\ 
+                                "VeryLoose" RNN jet WP &  \\
+                                $\pT > 20~\GeV$ &  \\
+                            \end{tabular}   \\
+    \midrule
+    Removed $\mu$           & \begin{tabular}{rr} 
+                                Found inside the \tauhadmurm &  \\ 
+                                $\pt > 10~\GeV$  &  \\ 
+                                "Medium" ID WP  &  
+                            \end{tabular} \\
+    \midrule
+    $\mathrm{bb}$ system    & \begin{tabular}{rr} 
+                                fatjet GN2x score > -5.0 &  \\
+                                fatjet passes "QCD1.55\%" WP & \textbf{*} \\ 
+                                $90 < \mbb < 160~\GeV$ & \\ 
+                                $\ptbb > 250~\GeV$ & \\ 
+                                $\dRjfj < 0.03$ & \textbf{*} 
+                            \end{tabular} \\
+    \midrule
+    $\tmth$ system          & \begin{tabular}{rr} 
+                                Opposite sign $\mu$ and $\tauhadmurm$ & \textbf{*} \\ 
+                                $\mttvis > 5~\GeV$ &  \\ 
+                                -0.1 < $\dPhiMuMet$ < 0.4 &  \\ 
+                                $\mttcol > 90~\GeV$ &  \\ 
+                                $\pttt > 250~\GeV$ &  
+                            \end{tabular}  \\
+    \midrule
+    Event level cut         & \begin{tabular}{rr} 
+                                $\absdPhibbtt > \pi/2$ &  \\
+                                % $\mbbttcol > 1200~\GeV$ & \\
+                            \end{tabular}  \\
+    \bottomrule
+    \end{tabular}
+\end{table}

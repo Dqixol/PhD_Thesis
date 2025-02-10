@@ -1,0 +1,46 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%****************************** Third Chapter **********************************
+%*******************************************************************************
+\chapter{Conclusion}
+
+\graphicspath{{18Chap8_Concl/Figs/}}
+
+In this thesis, we have explored multiple facets of tau lepton reconstruction and identification within the ATLAS detector 
+framework, as well as conducted a detailed search for the Graviton in the \(bb\tau\tau\) decay channel. 
+
+The muon-removal method developed for the boosted \(\tau_\mu\tau_{\text{had}}\) reconstruction has demonstrated significant 
+improvements in the identification efficiency of hadronically decaying taus in the presence of a nearby muon. This method 
+recovers the \(\tau_{\text{had}}\) identification efficiency to levels expected for isolated \(\tau_{\text{had}}\) decays 
+across all TauID working points, ensuring that the measurement precision for the kinematic properties of the visible 
+\(\tau_{\text{had}}\) system is maintained. This advancement was validated through benchmarking with a highly boosted 
+\(Z \rightarrow \tau_\mu\tau_{\text{had}}\) sample from the complete Run-2 dataset recorded by the ATLAS detector. The 
+results showed good agreement between data and Monte Carlo simulations, highlighting the robustness of the method.
+
+The electron-removal method for boosted \(\tau_e\tau_{\text{had}}\) reconstruction similarly displayed significant improvements. 
+This method accurately reconstructs the visible decay products within a single \(\tau_{\text{seed}}\) jet, addressing challenges 
+posed by the presence of nearby electrons. This advancement enhances the signal yield, and in the mean time suppresses the background contamination. 
+The method's effectiveness was benchmarked using the \(Z \rightarrow \tau_e\tau_{\text{had}}\) 
+channel.
+
+In our search for the Graviton in the \(bb\tau\tau\) channel, we utilized the full ATLAS Run-2 dataset, collected at 
+\(\sqrt{s} = 13 \text{ TeV}\) with an integrated luminosity of 140 fb\(^{-1}\). This search benefited from the 
+advancements in ATLAS combined performance, particularly the GNN-based \(bb\)-jet tagging algorithm and the muon-removal 
+technique for \(\tau_{\text{had}}\) identification. Our results showed good agreement between data 
+and Monte Carlo simulations in the control region, indicating negligible QCD background contamination in the signal 
+region. Statistical and systematic uncertainties were evaluated and incorporated into the final upper limits.
+
+The expected 95\% confidence level (CL) limits on the \(\sigma(pp \rightarrow G \rightarrow HH)\) were derived for mass 
+points ranging from 2 to 5 TeV. The limits obtained from this analysis significantly outperformed 
+previous ATLAS searches in the \(bb\tau\tau\) channel. For instance, at a resonance mass of 3000 GeV, we achieved 
+an expected limit of 4.0 fb, compared to the previous limit of approximately 55 fb in the 
+\(HH \rightarrow bb\tau_{\text{had}}\tau_{\text{had}}\) channel. Despite the 20-times lower $\hhbbtmth$ branching ratio,
+our limits were only 5-times less stringent than those obtained in the $\hhbbbb$ channel. This highlights the
+performance of the muon-removal technique in the $\tau_{\text{had}}$ identification, and the success of this analysis in
+suppressing the SM background contamination.
+
+In conclusion, the advancements in tau lepton reconstruction presented in this thesis 
+open up a new final state in the search for new physics phenomena. 
+The results of the Graviton search in the \(bb\tau\tau\) channel
+demonstrate the potential of these advancements to significantly enhance the discovery potential of the ATLAS experiment
+in the highly boosted di-$\tau$ channel.  

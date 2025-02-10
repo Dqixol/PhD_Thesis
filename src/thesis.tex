@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt,fourier,numbered,index,UKenglish,print]{thesis-doc}
+\input{thesis-preamble}
+
+\usepackage[minimal]{../atlaslatex/latex/atlaspackage}
+\usepackage{../atlaslatex/latex/atlasbiblatex}
+\usepackage{../atlaslatex/latex/atlascontribute}
+\usepackage{../atlaslatex/latex/atlasmisc}
+\usepackage{../atlaslatex/latex/atlasparticle}
+\usepackage{../atlaslatex/latex/atlasunit}
+\usepackage{../atlaslatex/latex/atlasjetetmiss}
+\usepackage{thesis-defs}
+\usepackage{pgfplots}
+\usepackage{bm}
+% \usepackage{CJKutf8}
+\pgfplotsset{compat=1.8}
+
+
+\addbibresource{../atlaslatex/bib/ATLAS.bib}
+\addbibresource{../atlaslatex/bib/CMS.bib}
+\addbibresource{../atlaslatex/bib/ConfNotes.bib}
+\addbibresource{../atlaslatex/bib/PubNotes.bib}
+\addbibresource{../atlaslatex/bib/ATLAS-useful.bib}
+\addbibresource{thesis-bib.bib}
+\addbibresource{1_MainChapters/Chap1_Intro/intro.bib}
+\addbibresource{1_MainChapters/Chap2_Theory/theory.bib}
+\addbibresource{1_MainChapters/Chap3_ATLAS/atlas-chap.bib}
+\addbibresource{1_MainChapters/Chap4_TauRec/tau.bib}
+
+
+\input{thesis-info}
+
+\begin{document}
+    \frontmatter
+    \maketitle
+    \include{0_Prologues/abstract}
+    \include{0_Prologues/declaration}
+    \include{0_Prologues/acknowledgement}
+    \include{0_Prologues/dedication}
+
+    \tableofcontents
+    \listoffigures
+    \listoftables
+
+    % \printnomenclature[space] space can be set as 2em between symbol and description
+    %\printnomenclature[3em]
+
+    % \printnomenclature
+    \mainmatter
+
+    \include{1_MainChapters/Chap1_Intro/intro}
+    \include{1_MainChapters/Chap2_Theory/theory}
+    \include{1_MainChapters/Chap3_ATLAS/atlas}
+    \include{1_MainChapters/Chap4_TauRec/tau}
+    \include{1_MainChapters/Chap5_MuonRM/muonrm}
+    \include{1_MainChapters/Chap6_ElecRM/elecrm}
+    \include{1_MainChapters/Chap7_GravLimit/ghh}
+    \include{1_MainChapters/Chap8_Concl/conclusion}
+
+    \begin{spacing}{0.9}
+    \cleardoublepage
+        \printbibliography[heading=bibintoc, title={References}]
+    \end{spacing}
+
+% ********************************** Appendices ********************************
+
+\begin{appendices} % Using appendices environment for more functunality
+
+    \include{2_Appendices/appendix1}
+    % \include{2_Appendices/appendix2}
+
+\end{appendices}
+
+% *************************************** Index ********************************
+\printthesisindex % If index is present
+
+\end{document}
