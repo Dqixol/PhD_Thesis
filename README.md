@@ -4,7 +4,7 @@ Welcome to my PhD thesis repository! This repository contains all the LaTeX file
 
 ## How to Compile
    You can compile using your preferred method:
-   - Using the Makefile (if included):
+   - Using the Makefile:
      ```bash
      make
      ```
