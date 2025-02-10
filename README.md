@@ -6,7 +6,7 @@ Welcome to my PhD thesis repository! This repository contains all the LaTeX file
    You can compile using your preferred method:
    - Using the Makefile:
      ```bash
-     make
+     make clean; make
      ```
 
    After successful compilation, you should get a `thesis.pdf` containing the fully formatted ATLAS Thesis.
