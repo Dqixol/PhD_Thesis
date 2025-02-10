@@ -70,6 +70,18 @@
   \fi
 }
 
+% ******************************* Blank page ***********************************
+\newcommand*{\blankpage}{%
+\vspace*{\fill}
+{\centering This page intentionally left blank\par}
+\vspace{\fill}}
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\blankpage
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
 % ******************************* Bibliography *********************************
 %* bibliography will be handled by ATLAS
 
@@ -214,6 +226,8 @@ supported!}
   \cleardoublepage
   \pdfbookmark[0]{\contentsname}{Contents}
   \temptableofcontents
+  \vspace*{\fill}
+  This dissertation contains 33535 words.
 }
 
 % *************************** Graphics and Figures *****************************
@@ -279,7 +293,7 @@ supported!}
 \renewcommand{\frontmatter}{%
   \cleardoublepage
   \@mainmatterfalse
-  \pagenumbering{roman}
+  \pagenumbering{arabic}
   \nolinenumbers
 }
 \renewcommand{\mainmatter}{%
@@ -697,12 +711,6 @@ wish to left align your text}
 \setFancyHdr % Apply fancy header settings otherwise apply it in preamble
 \fi
 
-% **************** Clear Header Style on the Last Empty Odd pages **************
-\renewcommand{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else%
-	\hbox{}%
-	\thispagestyle{empty}  % Empty header styles
-	\newpage%
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 
 
 % ******************************************************************************
@@ -839,20 +847,21 @@ wish to left align your text}
   
   % Crest
   % University Crest Long if college crest is defined
-  \vspace{.15\PHD@titlepagespacing}
+  \vspace*{0.5em}
   {\usebox{\PHD@crest}}
-  \vspace{.2\PHD@titlepagespacing}
+  \vspace*{0.5em}
   
 
 
 % Author
 {\usebox{\PHD@author}}
-\vspace{.2\PHD@titlepagespacing}
+% \vspace*{0.2em}
 {\usebox{\PHD@collegecrest}}
-% \vspace{.2\PHD@titlepagespacing}
+\vspace*{0.5em}
 
 % Supervisor
 \ifPHD@supervisor%
+\vspace*{0.5em}
 {\usebox{\PHD@supervisor}}
 \vspace*{0.5em}
 \fi
@@ -865,7 +874,8 @@ wish to left align your text}
 
 % Department and University
 {\usebox{\PHD@dept}}
-\vspace{.2\PHD@titlepagespacing}
+% \vspace{.5\PHD@titlepagespacing}
+\vspace*{2.0em}
 
 % Submission Text
 {\usebox{\PHD@submission}}
@@ -892,6 +902,13 @@ wish to left align your text}
 \centering
 }
 
+% ***************************** Copyright ********************************
+\newenvironment{Copyright}{
+\cleardoublepage
+\setsinglecolumn
+\chapter*{\centering \Large Copyright statement}
+\thispagestyle{empty}
+}
 
 
 % ******************************* Declaration **********************************
@@ -1037,7 +1054,7 @@ wish to left align your text}
 \newsavebox{\PHD@Title}
 \begin{lrbox}{\PHD@Title}
   \begin{minipage}[c]{0.98\textwidth}
-    \centering \Huge \bfseries{\@title}
+    \centering \huge \bfseries{\@title}
     \ifthenelse{\equal{\@subtitle}{}}{
       % subtitle is not defined
     }{
@@ -1111,8 +1128,12 @@ wish to left align your text}
 \newsavebox{\PHD@dept}
 \begin{lrbox}{\PHD@dept}
   \begin{minipage}[c]{\textwidth}
-    \centering {\large \@dept \par}
-	       {\large \@university \par}
+    \setstretch{1.2}{
+    \centering {
+      {\large \@dept \par}
+      {\large \@university \par}
+    }
+    }
   \end{minipage}
 \end{lrbox}
 
