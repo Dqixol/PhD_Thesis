@@ -726,6 +726,8 @@ wish to left align your text}
 % The year and term the degree will be officially conferred
 \newcommand{\@degreedate}{\monthname[\the\month]\space\the\year}
 \newcommand{\degreedate}[1]{\renewcommand{\@degreedate}{#1}}
+\newcommand{\@degreeyear}{\the\year}
+\newcommand{\degreeyear}[1]{\renewcommand{\@degreeyear}{#1}}
 
 % The full (unabbreviated) name of the degree
 \newcommand{\@degreetitle}{}
@@ -779,7 +781,7 @@ wish to left align your text}
 \newcommand{\advisorlinewidth}[1]{\renewcommand{\@advisorlinewidth}{#1}}
 
 % Submission Text
-\newcommand{\submissiontext}{This dissertation is submitted for the degree of }
+\newcommand{\submissiontext}{A thesis submitted to the University of Manchester for the degree of}
 
 % keywords (These keywords will appear in the PDF meta-information
 % called `pdfkeywords`.)
@@ -847,17 +849,10 @@ wish to left align your text}
   
   % Crest
   % University Crest Long if college crest is defined
-  \vspace*{0.5em}
+  \vspace*{1.5em}
   {\usebox{\PHD@crest}}
-  \vspace*{0.5em}
+  \vspace*{1.5em}
   
-
-
-% Author
-{\usebox{\PHD@author}}
-% \vspace*{0.2em}
-{\usebox{\PHD@collegecrest}}
-\vspace*{0.5em}
 
 % Supervisor
 \ifPHD@supervisor%
@@ -872,17 +867,23 @@ wish to left align your text}
 \vspace*{0.5em}
 \fi
 
+% Submission Text
+{\usebox{\PHD@submission}}
+\vfill
+{\usebox{\PHD@collegedate}}
+\vfill
+% Author
+{\usebox{\PHD@author}}
+% \vspace*{0.2em}
+{\usebox{\PHD@collegecrest}}
+\vfill
 % Department and University
 {\usebox{\PHD@dept}}
 % \vspace{.5\PHD@titlepagespacing}
-\vspace*{2.0em}
-
-% Submission Text
-{\usebox{\PHD@submission}}
 
 % College and degree date
-\vfill
-{\usebox{\PHD@collegedate}}
+
+
     
 \end{center}
 
@@ -1144,6 +1145,7 @@ wish to left align your text}
     \begin{center}
       \large \submissiontext \par
       \large \textit {\@degreetitle} \par
+      \large {in the Faculty of Science and Engineering} \par
     \end{center}
   \end{minipage}
 \end{lrbox}
@@ -1156,7 +1158,7 @@ wish to left align your text}
   \ifthenelse{\equal{\@college}{}}{
     % college is not defined
     \begin{center}
-      \@degreedate
+      \@degreeyear
     \end{center}
   }{
     % college is defined
@@ -1164,7 +1166,7 @@ wish to left align your text}
       \flushleft\@college
     \end{minipage}
     \begin{minipage}[b]{0.49\textwidth}
-      \flushright \@degreedate
+      \flushright \@degreeyear
     \end{minipage}
   } % college is defined
 \end{minipage}
